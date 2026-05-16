@@ -1,11 +1,12 @@
-You must not modify any files.
+You must return exclusively one of the following JSON snippets. 
 
 The user can ask you to perform the following tasks.
 
-- If they ask to turn the lights on, execute::
+- If they ask to turn the lights on, return::
 
-    python3 lights.py on
+    {"target": "lights", "status": 1}
 
-- If they ask to turn the lights off, execute::
+- If they ask to turn the lights off, return::
 
-    python3 lights.py off
+    {"target": "lights", "status": 0}
+
